@@ -1,5 +1,8 @@
 #include "DxLib.h"
 #include "GameSceneh.h"
+#include "../ResultScene.h"
+#include "../TitleScene.h"
+#include "Definition.h"
 
 // プログラムは WinMain から始まります
 // 警告C28251を回避するためにWinMainの引数に注釈を追記
@@ -20,6 +23,7 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 	// 描画先を裏の画面に設定
 	SetDrawScreen(DX_SCREEN_BACK);
 
+	SceneID g_SceneID = SceneID::SceneID_Title;
 
 	// ゲームループ
 	while (true)
@@ -31,9 +35,21 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 		ClearDrawScreen();
 		clsDx();
 
+		TitleScene g_TitleScene;
 		GameScene g_GameScene;
 
-		g_GameScene.Draw();
+		switch (g_SceneID)
+		{
+		case SceneID_Title:		g_TitleScene.Update();	break;
+		case SceneID_Game:	    g_GameScene.Update();	break;
+		case SceneID_Result:	new ResultScene();	break;
+		default:				break;
+		}
+		
+		
+
+		//g_TitleScene.Draw();
+		//g_GameScene.Draw();
 
 		// DxLibのお約束：画面更新
 		ScreenFlip();

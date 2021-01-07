@@ -1,5 +1,5 @@
-#ifndef GAMESCENE_H
-#define GAMESCENE_H
+#ifndef GAME_SCENE_H
+#define GAME_SCENE_H
 
 class GameScene 
 {
@@ -8,6 +8,7 @@ public:
 	~GameScene();
 
 public:
+	void Update();
 	void Draw();
 
 
@@ -15,5 +16,5 @@ public:
 
 
 
-#endif // !GAMESCENE_H
+#endif // !GAME_SCENE_H
 
