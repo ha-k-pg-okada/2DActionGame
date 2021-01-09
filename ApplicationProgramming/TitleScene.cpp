@@ -1,8 +1,9 @@
 #include "../TitleScene.h"
-#include "Definition.h"
+#include "Scene.h"
 #include "DxLib.h"
 
 extern SceneID g_Scene;
+extern SceneStep g_SceneStep;
 
 TitleScene::TitleScene()
 {
@@ -24,11 +25,13 @@ void TitleScene::Update()
 		//ç∂ÉLÅ[Ç™âüÇ≥ÇÍÇƒÇ¢ÇÍÇŒ
 		if (buf[KEY_INPUT_RETURN] == 1) 
 		{
-			g_Scene = SceneID::SceneID_Game;
-			//DrawString(100, 100, "TitleScene", GetColor(255, 255, 255), 0);
+			//g_Scene = SceneID::SceneID_Title;
+			
+			g_SceneStep = SceneStep::Run;
+			
 		}
 
-		
+		DrawString(100, 100, "TitleScene", GetColor(255, 255, 255), 0);
 
 }
 
@@ -36,3 +39,4 @@ void TitleScene::Draw()
 {
 	DrawString(100, 100, "TItleScene", GetColor(255, 255, 255), 0);
 }
+

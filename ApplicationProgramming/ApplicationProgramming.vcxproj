@@ -152,15 +152,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameSceneExecution.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="ResultSceneExecution.cpp" />
+    <ClCompile Include="Scene.cpp" />
     <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="TitleSceneExecution.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Definition.h" />
+    <ClInclude Include="GameSceneExecution.h" />
     <ClInclude Include="GameSceneh.h" />
     <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="ResultSceneExecution.h" />
+    <ClInclude Include="Scene.h" />
     <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="TitleSceneExecution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

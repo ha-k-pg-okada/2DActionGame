@@ -1,3 +1,2 @@
-﻿  GameScene.cpp
-TitleScene.obj : error LNK2001: 外部シンボル "enum SceneID g_Scene" (?g_Scene@@3W4SceneID@@A) は未解決です
-C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\Debug\ApplicationProgramming.exe : fatal error LNK1120: 1 件の未解決の外部参照
+﻿  Main.cpp
+  ApplicationProgramming.vcxproj -> C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\Debug\ApplicationProgramming.exe

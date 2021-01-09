@@ -10,6 +10,9 @@ public:
 public:
 	void Update();
 	void Draw();
+
+public:
+	
 };
 
 

@@ -8,9 +8,9 @@ public:
 	~ResultScene();
 
 public:
+	void Update();
 	void Draw();
-
-
+	
 };
 
 
