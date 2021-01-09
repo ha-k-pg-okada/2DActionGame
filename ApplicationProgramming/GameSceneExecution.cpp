@@ -5,7 +5,7 @@
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
-GameScene g_GameScene;
+static GameScene g_GameScene;
 
 GameSceneExecution::GameSceneExecution()
 {

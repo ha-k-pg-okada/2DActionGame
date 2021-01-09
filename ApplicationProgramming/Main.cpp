@@ -30,7 +30,7 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 	{
 		// Windowsのメッセージ処理に失敗したか、閉じられたら終了
 		if (ProcessMessage() != 0) { break; }
-		if (DxLib_Init() == -1) { return-1; }
+		
 		// DxLibのお約束：画面クリア
 		ClearDrawScreen();
 		clsDx();

@@ -5,7 +5,7 @@
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
-TitleScene g_TitleScene;
+static TitleScene g_TitleScene;
 
 TiteleSceneExecution::TiteleSceneExecution()
 {
@@ -19,7 +19,8 @@ TiteleSceneExecution::~TiteleSceneExecution()
 
 void TiteleSceneExecution::InitTitleScene()
 {
-	g_TitleScene.Update();
+	//g_TitleScene.Update();
+	g_SceneStep = SceneStep::Run;
 }
 
 void TiteleSceneExecution::RunTitleScene()

@@ -1,2 +1,4 @@
-﻿  Main.cpp
-  ApplicationProgramming.vcxproj -> C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\Debug\ApplicationProgramming.exe
+﻿  MapChip.cpp
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(56,40): error C2065: 'width_chip_num': 定義されていない識別子です。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(57,40): error C2065: 'height_chip_num': 定義されていない識別子です。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(73,60): error C2065: 'texture_data': 定義されていない識別子です。

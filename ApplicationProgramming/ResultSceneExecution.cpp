@@ -5,7 +5,7 @@
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
-ResultScene g_ResultScene;
+static ResultScene g_ResultScene;
 
 ResultSceneExecution::ResultSceneExecution()
 {
