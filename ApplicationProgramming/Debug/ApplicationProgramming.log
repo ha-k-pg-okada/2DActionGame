@@ -1,4 +1,34 @@
 ﻿  MapChip.cpp
-C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(56,40): error C2065: 'width_chip_num': 定義されていない識別子です。
-C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(57,40): error C2065: 'height_chip_num': 定義されていない識別子です。
-C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(73,60): error C2065: 'texture_data': 定義されていない識別子です。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.h(26,20): warning C4200: 非標準の拡張機能が使用されています: 構造体または共用体中にサイズが 0 の配列があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.h(26,20): message : このメンバーは、既定のコンストラクターまたはコピー/移動代入演算子により無視されます
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(62,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(62,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(63,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(63,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(64,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(64,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(65,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(65,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(66,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(66,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(67,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(67,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(68,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(68,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(69,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(69,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(70,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(70,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(71,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(71,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(72,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(72,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(73,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(73,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(74,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(74,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(75,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(75,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(76,43): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\MapChip.cpp(76,31): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  ApplicationProgramming.vcxproj -> C:\Users\Miokiti Jr\Documents\2DActionGame\ApplicationProgramming\Debug\ApplicationProgramming.exe

@@ -2,11 +2,13 @@
 #include "Scene.h"
 #include "DxLib.h"
 #include "Player.h"
+#include "MapChip.h"
 
 extern SceneID g_Scene;
 extern SceneStep g_SceneStep;
 
 static Player g_Player;
+static MapChip g_MapChip;
 
 GameScene::GameScene()
 {
@@ -35,7 +37,9 @@ void GameScene::Update()
 	//}
 
 	g_Player.Update();
+	g_MapChip.Draw();
 	g_Player.Draw();
+
 	
 	DrawString(100, 100, "GameScene", GetColor(255, 255, 255), 0);
 }

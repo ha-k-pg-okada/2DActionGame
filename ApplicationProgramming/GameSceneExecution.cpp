@@ -1,11 +1,13 @@
 #include "GameSceneh.h"
 #include "Scene.h"
 #include "GameSceneExecution.h"
+#include "MapChip.h"
 
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
 static GameScene g_GameScene;
+
 
 GameSceneExecution::GameSceneExecution()
 {
@@ -20,6 +22,7 @@ GameSceneExecution::~GameSceneExecution()
 void GameSceneExecution::InitGameScene()
 {
 	g_GameScene.Update();
+	
 }
 
 void GameSceneExecution::RunGameScene()
