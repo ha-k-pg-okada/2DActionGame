@@ -2,11 +2,19 @@
 #include "Scene.h"
 #include "GameSceneExecution.h"
 #include "MapChip.h"
+#include "Player.h"
+#include "Camera.h"
+#include "BackGround.h"
 
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
 static GameScene g_GameScene;
+static Player g_Player;
+ Camera g_Camera;
+ 
+static BackGround g_BackGround;
+//static MapChip g_MapChip;
 
 
 GameSceneExecution::GameSceneExecution()
@@ -21,8 +29,15 @@ GameSceneExecution::~GameSceneExecution()
 
 void GameSceneExecution::InitGameScene()
 {
-	g_GameScene.Update();
 	
+	MapChip g_MapChip;
+	g_Camera.CameraUpdate(g_Player.Position);
+	g_BackGround.Draw();
+	//g_GameScene.Update();
+	g_Player.Update();
+	g_MapChip.Draw();
+	g_Player.Draw();
+
 }
 
 void GameSceneExecution::RunGameScene()

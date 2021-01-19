@@ -7,8 +7,6 @@
 extern SceneID g_Scene;
 extern SceneStep g_SceneStep;
 
-static Player g_Player;
-static MapChip g_MapChip;
 
 GameScene::GameScene()
 {
@@ -22,7 +20,9 @@ GameScene::~GameScene()
 
 void GameScene::Update()
 {
-	//char buf[256];
+
+	
+	//char buf[256];z
 
 	////キー状態を全部取得	
 	//GetHitKeyStateAll(buf);
@@ -36,12 +36,11 @@ void GameScene::Update()
 
 	//}
 
-	g_Player.Update();
-	g_MapChip.Draw();
-	g_Player.Draw();
+	// マップチップと矩形の当たり判定
+	
 
 	
-	DrawString(100, 100, "GameScene", GetColor(255, 255, 255), 0);
+	//DrawString(100, 100, "GameScene", GetColor(255, 255, 255), 0);
 }
 
 void GameScene::Draw()

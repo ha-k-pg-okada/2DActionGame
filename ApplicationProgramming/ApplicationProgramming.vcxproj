@@ -151,6 +151,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameSceneExecution.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -164,6 +166,8 @@
     <ClCompile Include="ソース.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BackGround.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="GameSceneExecution.h" />
     <ClInclude Include="GameSceneh.h" />
     <ClInclude Include="MapChip.h" />

@@ -15,7 +15,7 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 	ChangeWindowMode(TRUE);					// ウィンドウモード
 	SetGraphMode(640, 480, 32);				// 画面モード変更
 	SetBackgroundColor(125, 125, 125);		// 背景色
-	SetMainWindowText("My倉庫番");			// メニューバーのタイトル
+	SetMainWindowText("ActionGame");			// メニューバーのタイトル
 	if (DxLib_Init() == -1) { return -1; }
 
 	// 描画先を裏の画面に設定
@@ -35,19 +35,8 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 		ClearDrawScreen();
 		clsDx();
 
-		//switch (g_SceneID)
-		//{
-		//case SceneID::SceneID_Title:		TiteleSceneExecution::TitleSceneUpdate();	break;
-		//	//case SceneID_Game:	    g_GameScene.Update();	break;
-		//	//case SceneID_Result:	new ResultScene();	break;
-		//default:				break;
-		//}
-
 		SceneUpdate01();
 		
-		//g_TitleScene.Draw();
-		//g_GameScene.Draw();
-
 		// DxLibのお約束：画面更新
 		ScreenFlip();
 	}

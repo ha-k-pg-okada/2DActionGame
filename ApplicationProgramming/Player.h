@@ -13,9 +13,14 @@ public:
 	void Update();
 	void Draw();
 
-private:
+	Vec2& GetPlayerPos();
+	Vec2 GetPlayerCenterPos();
 
 	Vec2 Position;
+
+private:
+	
+    Vec2 Vector;
 	Vec2 Speed;
 };
 
