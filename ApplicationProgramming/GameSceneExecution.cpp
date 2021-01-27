@@ -5,12 +5,14 @@
 #include "Player.h"
 #include "Camera.h"
 #include "BackGround.h"
+#include "Slider.h"
 
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
 
 static GameScene g_GameScene;
 static Player g_Player;
+static Slider g_Slider;
  Camera g_Camera;
  
 static BackGround g_BackGround;
@@ -29,20 +31,23 @@ GameSceneExecution::~GameSceneExecution()
 
 void GameSceneExecution::InitGameScene()
 {
-	
-	MapChip g_MapChip;
-	g_Camera.CameraUpdate(g_Player.Position);
-	g_BackGround.Draw();
-	//g_GameScene.Update();
-	g_Player.Update();
-	g_MapChip.Draw();
-	g_Player.Draw();
-
+	g_Player.Init();
+	g_Slider.Init();
+	g_SceneStep = SceneStep::Run;
 }
 
 void GameSceneExecution::RunGameScene()
 {
-	g_SceneStep = SceneStep::Finish;
+
+	MapChip g_MapChip;
+	g_Camera.CameraUpdate(g_Player.GetPlayerPos());
+	g_BackGround.Draw();
+	g_MapChip.Update();
+	g_Player.Update();
+	g_MapChip.Draw();
+	g_Player.Draw();
+	g_Slider.Draw();
+	
 }
 
 void GameSceneExecution::FinishGameScene()

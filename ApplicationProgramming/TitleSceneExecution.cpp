@@ -1,6 +1,7 @@
 #include "../TitleSceneExecution.h"
 #include "Scene.h"
 #include "TitleScene.h"
+#include "DxLib.h"
 
 extern SceneID g_SceneID;
 extern SceneStep g_SceneStep;
@@ -19,8 +20,12 @@ TiteleSceneExecution::~TiteleSceneExecution()
 
 void TiteleSceneExecution::InitTitleScene()
 {
-	//g_TitleScene.Update();
-	g_SceneStep = SceneStep::Run;
+	DrawString(100, 100, "ActionGame", GetColor(255, 255, 255), 0);
+	if (CheckHitKey(KEY_INPUT_RETURN))
+	{
+		g_SceneStep = SceneStep::Run;
+	}
+	
 }
 
 void TiteleSceneExecution::RunTitleScene()

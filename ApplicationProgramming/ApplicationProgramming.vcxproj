@@ -161,6 +161,7 @@
     <ClCompile Include="ResultScene.cpp" />
     <ClCompile Include="ResultSceneExecution.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Slider.cpp" />
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="TitleSceneExecution.cpp" />
     <ClCompile Include="ソース.cpp" />
@@ -175,6 +176,7 @@
     <ClInclude Include="ResultScene.h" />
     <ClInclude Include="ResultSceneExecution.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Slider.h" />
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="TitleSceneExecution.h" />
   </ItemGroup>

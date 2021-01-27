@@ -23,8 +23,6 @@ int WINAPI WinMain(_In_     HINSTANCE hInstance,
 
 	
 	
-	
-
 	// ƒQ[ƒ€ƒ‹[ƒv
 	while (true)
 	{

@@ -8,7 +8,7 @@
 #define MAP_CHIP_Y     (4)					// マップチップの縦幅の数
 #define SIZE_MAP_X     (64)					// マップチップの縦幅
 #define SIZE_MAP_Y     (64)		            // マップチップの縦幅
-#define MAP_CHIP_MAX_X (10)		            // ステージの縦幅
+#define MAP_CHIP_MAX_X (20)		            // ステージの縦幅
 #define MAP_CHIP_MAX_Y (8)		            // ステージの横幅
 
 enum MapChipId
@@ -38,14 +38,28 @@ public:
 
 public:
 	void Draw();
+	void Update();
 
-	bool OncollisionRectAndMapChip(Vec2 obj_pos, Vec2 obj_size);
+	bool OncollisionRectAndMapChip(Vec2 obj_pos, Vec2 obj_size, int Number);
+	void Collision(Vec2 position,  Vec2* hitBlockPos);
 
+	
+
+	
+
+	bool GetChipType(Vec2 position);
+	bool isActive;
+
+	
 private:
 	Vec2 Chip_size;
+	int MapChipDate[MAP_CHIP_ALL];
 	Vec2 Position;
 
-	int MapChipDate[MAP_CHIP_ALL];
+	
+	
+
+	
 };
 
 

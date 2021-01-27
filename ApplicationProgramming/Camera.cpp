@@ -23,20 +23,9 @@ Vec2 Camera::Update(Vec2 pos)
 	return Screen_Pos;
 }
 
-void Camera::CameraUpdate(Vec2 pos)
+void Camera::CameraUpdate(Vec2 pos1)
 {
-	//static const float Offset = 200;
 
-	//g_CameraPos.X = g_Player.Position.X - Offset;
-	//if (g_CameraPos.X <= 0)
-	//{
-	//	g_CameraPos.X = 0;
-	//}
-	////背景が1280でWindowサイズが640なので移動制限が640まで
-	//else if (g_CameraPos.X >= 640)
-	//{
-	//	g_CameraPos.X = 640;
-	//}
 
 	Vec2 window_half
 	{
@@ -45,7 +34,7 @@ void Camera::CameraUpdate(Vec2 pos)
 	};
 
 	// 座標更新
-	Position = pos;
+	Position = pos1;
 
 	// X軸のステージの内外判定
 	if (Position.X - window_half.X <= 0.0f)
